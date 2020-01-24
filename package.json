@@ -1,0 +1,30 @@
+{
+  "name": "trie",
+  "version": "1.0.0",
+  "description": "A simple trie Implementation in JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stkterry/trie.git"
+  },
+  "keywords": [
+    "Trie",
+    "Node",
+    "JavaScript"
+  ],
+  "author": "Steven K Terry <stkterry@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stkterry/trie/issues"
+  },
+  "homepage": "https://github.com/stkterry/trie#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "live-server": "^1.2.1",
+    "mocha": "^7.0.0",
+    "mochawesome": "^4.1.0"
+  }
+}

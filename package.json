@@ -4,7 +4,10 @@
   "description": "A simple trie Implementation in JavaScript",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter mochawesome",
+    "test:dev": "mocha --reporter mochawesome --reporter-options reportDir=test/mochawesome --watch",
+    "test:browser": "live-server --port=9000 --open=/test/mochawesome/mochawesome.html",
+    "test:suite": "concurrently \"npm run test:dev\" \"npm run test:browser\" "
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/stkterry/trie#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "concurrently": "^5.0.2",
     "live-server": "^1.2.1",
     "mocha": "^7.0.0",
